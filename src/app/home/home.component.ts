@@ -10,6 +10,8 @@ import { map, shareReplay } from 'rxjs/operators';
 import { AsyncPipe, NgIf } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from '../menu/menu.component';
+import { CategoriesComponent } from '../categories/categories.component';
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -25,7 +27,9 @@ import { MenuComponent } from '../menu/menu.component';
     AsyncPipe,
     NgIf,
     CommonModule,
-    MenuComponent
+    MenuComponent,
+    CategoriesComponent,
+    RouterOutlet
   ],
 })
 export class HomeComponent {
